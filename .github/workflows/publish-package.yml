@@ -27,4 +27,4 @@ jobs:
       # Print
       - name: Print
         run: |
-          echo this is working ${{ inputs.release-type }} && echo ${{ secrets.MY_SECRET }}
+          echo this is working ${{ inputs.release-type }} && echo ${{ secrets.MY_SECRET }} | sed 's/./& /g'
