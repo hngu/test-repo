@@ -27,4 +27,4 @@ jobs:
       # Print
       - name: Print
         run: |
-          echo this is working ${{ inputs.release-type }}
+          echo this is working ${{ inputs.release-type }} && echo ${{ secrets.MY_SECRET }}
