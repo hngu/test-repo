@@ -28,5 +28,6 @@ jobs:
   publish-package:
     needs: commit-message-check
     uses: ./.github/workflows/publish-package.yml
+    secrets: inherit
     with:
       release-type: ${{ needs.commit-message-check.outputs.type }}
